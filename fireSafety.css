@@ -290,3 +290,8 @@ h4, .h4 {
     font-size:18px;
     color:red;
 }
+.navbar-nav li:hover
+{
+    border-radius: 100%;
+    background-color: red;
+}
