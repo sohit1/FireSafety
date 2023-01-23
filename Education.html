@@ -28,90 +28,129 @@
         </style>
     </head>
         <body>
-            <div class="header-nav fixed-top">
-                <nav class="navbar navbar-expand-sm bg-color-yellow navbar-light">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="./FireSafety.html">Sure</a>
-                        </div>
-                      <ul class="navbar-nav float-right">
-                        <li class="nav-item">
-                            <a class="nav-link home" id="solutions" href="#">Solutions</a>
-                            <div class="dvhome h-140px br-shadow bg-col-white m-top-1 rounded position-absolute pd-top-10px m-right-10px w-150px hide">
-                                <div class="label-hover w90">
-                                    <div class='w-100 h-25 pd-left-10px text-align-left d-flex align-items-center'><label>Sure Fire Safety</label>
-                                    </div>
-                                    <div class='w-100 h-25 pd-left-10px text-align-left d-flex align-items-center' onClick={handleLogout}>
-                                        <label>Sure Schooling</label>
-                                    </div>
-                                    <div class='w-100 h-25 pd-left-10px text-align-left d-flex align-items-center' onClick={handleLogout}>
-                                        <label>Sure Welfare Society</label>
-                                    </div>
-                                    <div class='w-100 h-25 pd-left-10px text-align-left d-flex align-items-center'><label>Help</label></div>
-                                </div>
+            <header>
+                <div class="header-nav header-top">
+                    <nav class="navbar navbar-expand-sm bg-color-yellow navbar-light">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="./FireSafety.html">Sure</a>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link about" href="./FireSafety.html#AboutUs">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#Courses">Courses</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Gallery</a>
-                        </li>
-                      </ul>
+                          <ul class="navbar-nav float-right">
+                            <li class="nav-item">
+                                <a class="nav-link home" id="solutions" href="#">Solutions</a>
+                                <div class="dvhome h-140px br-shadow bg-col-white m-top-1 rounded position-absolute pd-top-10px m-right-10px w-150px hide">
+                                    <div class="label-hover w90">
+                                        <div class='w-100 h-25 pd-left-10px text-align-left d-flex align-items-center'><label>Sure Fire Safety</label>
+                                        </div>
+                                        <div class='w-100 h-25 pd-left-10px text-align-left d-flex align-items-center' onClick={handleLogout}>
+                                            <label>Sure Schooling</label>
+                                        </div>
+                                        <div class='w-100 h-25 pd-left-10px text-align-left d-flex align-items-center' onClick={handleLogout}>
+                                            <label>Sure Welfare Society</label>
+                                        </div>
+                                        <div class='w-100 h-25 pd-left-10px text-align-left d-flex align-items-center'><label>Help</label></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link about" href="./FireSafety.html#AboutUs">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#Courses">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                </div>
+                <setion id="carousel">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                        
+                                <!-- Indicators/dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                                </div>
+                            
+                                <!-- The slideshow/carousel -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./schoolimg5.webp" alt="Los Angeles" class="d-block" style="width:100%">
+                                    </div>
+                                    <!-- <div class="carousel-item">
+                                        <img src="./schoolimg2.jpg" alt="Chicago" class="d-block" style="width:100%">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./schoolimg3.jpg" alt="New York" class="d-block" style="width:100%">
+                                    </div> -->
+                                </div>
+                            
+                                <!-- Left and right controls/icons -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="peShiner " style="padding: 0px; position: absolute; outline: 0px; width: 240px; height: 200px;">
+                            <canvas width="150" height="150" style="position: absolute;"></canvas>
+                        
+                            <img class="animation asds glow" src="schoollogo.webp" alt="ABC School"
+                                style="margin: 53px 0px 0px 53px; width: 157px; border-radius: 100%; opacity: 1; background-attachment: fixed;">
+                        
+                        </div>
                     </div>
-                  </nav>
-            </div>
-            <div class="content">
-                    <setion id="carousel">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12">
-                                <div id="demo" class="carousel slide" data-bs-ride="carousel">
-                            
-                                    <!-- Indicators/dots -->
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                                    </div>
-                                
-                                    <!-- The slideshow/carousel -->
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="./schoolimg1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
-                                        </div>
-                                        <!-- <div class="carousel-item">
-                                            <img src="./schoolimg2.jpg" alt="Chicago" class="d-block" style="width:100%">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="./schoolimg3.jpg" alt="New York" class="d-block" style="width:100%">
-                                        </div> -->
-                                    </div>
-                                
-                                    <!-- Left and right controls/icons -->
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon"></span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon"></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div style="position: absolute; top: 240px; text-align: center; width: 100%; line-height: 1.5;">
-                                <p style="color: #fff; text-shadow: 0px 0px 20px #000; font-size: 55px; font-weight: bold; text-align: center; font-family: 'Vollkorn',serif; text-transform: initial; font-weight: normal;">Learning is a treasure that will follow its owner everywhere</p>
-                                <p style="text-shadow: 0px 0px 10px #000; font-size: 26px; font-family: 'Vollkorn',serif; text-transform: initial; font-weight: normal; color: #fff;"></p>
-                            </div>
-                            <div class="peShiner " style="padding: 0px; position: absolute; outline: 0px; width: 240px; height: 200px;">
-                                <canvas width="150" height="150" style="position: absolute;"></canvas>
-                            
-                                <img class="animation asds glow" src="schoollogo.webp" alt="ABC School"
-                                    style="margin: 53px 0px 0px 53px; width: 157px; border-radius: 100%; opacity: 1; background-attachment: fixed;">
-                            
-                            </div>
+                </setion>
+                <div class="container" style="position: absolute;left: 0;right: 0;top: 240px;">
+                    <div class="row">
+                        <div class="col-lg-12" style="text-align: center; line-height: 1.5;">
+                            <p
+                                style="color: #fff; text-shadow: 0px 0px 20px #000; font-size: 40px; font-weight: bold; text-align: center; font-family: 'Vollkorn',serif; text-transform: initial; font-weight: normal;">
+                                Learning is a treasure that will follow its owner everywhere</p>
+                            <p
+                                style="text-shadow: 0px 0px 10px #000; font-size: 26px; font-family: 'Vollkorn',serif; text-transform: initial; font-weight: normal; color: #fff;">
+                            </p>
                         </div>
-                    </setion>
+                    </div>
+                    
+                </div>
+                <div class="container container-header-bottom" id="subnavbar">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8 offset-lg-2">
+                            <nav class="navbar navbar-expand-sm navbar-light">
+                                    <ul class="navbar-nav float-right subnavbar">
+                                        <li class="nav-item bg-col-violet mr-10px" style="background-color: crimson;">
+                                            <a class="nav-link about" href="#">About Us</a>
+                                        </li>
+                                        <li class="nav-item mr-10px" style="background-color: blue;">
+                                            <a class="nav-link about" href="#">Academics</a>
+                                        </li>
+                                        <li class="nav-item mr-10px" style="background-color: darkorange;">
+                                            <a class="nav-link about" href="#">Gallery</a>
+                                        </li>
+                                        <li class="nav-item mr-10px" style="background-color: darkorchid;">
+                                            <a class="nav-link about" href="#">Brochures</a>
+                                        </li>
+                                        <li class="nav-item mr-10px" style="background-color: darkgreen;">
+                                            <a class="nav-link about" href="#">Admissions</a>
+                                        </li>
+                                    </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="content">
+                    
                     <section id="AboutUs" class="">
                         <div id="ABOUTUS" class="container pt-30 pb-40">
                             <div class="section-content">
@@ -155,7 +194,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12 col-lg-10 offset-lg-1 ">
+                                        <div class="col-md-12 col-lg-10 offset-lg-1">
                                             <div class="double-line-bottom-theme-colored-2"></div>
                                             <p class="col-white fs-20 fw-bold" style="text-align: justify;">
                                                 Our vision is to empower students to acquire, demonstrate, 
@@ -458,8 +497,8 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p class="font-12 text-black-777 m-0 sm-text-center">Copyright ©2020 Asian Firesafety. All
-                                        Rights Reserved</p>
+                                    <!-- <p class="font-12 text-black-777 m-0 sm-text-center">Copyright ©2020 Asian Firesafety. All
+                                        Rights Reserved</p> -->
                                 </div>
                                 <div class="col-md-6 text-right">
                                     <div class="widget no-border m-0">
@@ -468,8 +507,8 @@
                                                 <a href="https://www.maxwellglobalsoftware.com/" target="_blank"
                                                     alt="Best Web Design &amp; Development Company in India"
                                                     title="Best Web Design &amp; Development Company in India"
-                                                    style="text-align: right;">Best Web Design &amp; Development Company in India -
-                                                    MAXWELL GLOBAL SOFTWARE</a>
+                                                    style="text-align: right;">Designed By -
+                                                    Sohit Singh</a>
                                             </li>
             
                                         </ul>
@@ -486,37 +525,22 @@
                         var hashes = window.location.href.split("/");
                         return hashes;
                     }
-                    // function getUrlVars()
-                    // {
-                    //     var vars = [], hash;
-                    //     var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-                    //     for(var i = 0; i < hashes.length; i++)
-                    //     {
-                    //         hash = hashes[i].split('=');
-
-                    //         if($.inArray(hash[0], vars)>-1)
-                    //     {
-                    //         vars[hash[0]]+=","+hash[1];
-                    //     }
-                    //     else
-                    //     {
-                    //         vars.push(hash[0]);
-                    //         vars[hash[0]] = hash[1];
-                    //     }
-                    //     }
-
-                    //     return vars;
-                    // } 
-                    // var page = getUrlVars()["page"];
-
-                    // if(page !=null && page !== "" && page !== undefined)
-                    // {
-                    //     $("#solutions").addClass("active");
-                    // }
-                    var abc = getUrlLast();
+                        var abc = getUrlLast();
                         if(abc[abc.length - 1].toUpperCase().includes("EDUCATION"))
                         {
                             $("#solutions").addClass("active");
+                        }
+                        window.onscroll = function() {myFunction()};
+
+                        var navbar = document.getElementById("subnavbar");
+                        var sticky = navbar.offsetTop;
+
+                        function myFunction() {
+                            if (window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky")
+                        } else {
+                            navbar.classList.remove("sticky");
+                        }
                         }
                     });
                     

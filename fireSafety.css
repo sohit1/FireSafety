@@ -332,6 +332,7 @@ h4, .h4 {
 .position-absolute
 {
     position:absolute !important;
+    z-index: 999 !important;
 
 }
 
@@ -400,27 +401,27 @@ h4, .h4 {
     -o-animation: glowing 1500ms infinite;
     animation: glowing 1500ms infinite;
   }
-  @-webkit-keyframes glowing {
+  /* @-webkit-keyframes glowing {
     0% { background-color: #FFEB3B; -webkit-box-shadow: 0 0 3px #FFEB3B; }
-    50% { background-color: #FF0000; -webkit-box-shadow: 0 0 50px #FF0000; }
+    50% { background-color: #1900ff; -webkit-box-shadow: 0 0 50px #FF0000; }
     100% { background-color: #FFEB3B; -webkit-box-shadow: 0 0 3px #FFEB3B; }
-  }
+  } */
   
-  @-moz-keyframes glowing {
+  /* @-moz-keyframes glowing {
     0% { background-color: #FFEB3B; -moz-box-shadow: 0 0 3px #FFEB3B; }
-    50% { background-color: #FF0000; -moz-box-shadow: 0 0 50px #FF0000; }
+    50% { background-color: #1900ff; -moz-box-shadow: 0 0 50px #FF0000; }
     100% { background-color: #FFEB3B; -moz-box-shadow: 0 0 3px #FFEB3B; }
-  }
+  } */
   
-  @-o-keyframes glowing {
+  /* @-o-keyframes glowing {
     0% { background-color: #FFEB3B; box-shadow: 0 0 3px #FFEB3B; }
-    50% { background-color: #ef190a; box-shadow: 0 0 50px #e90618; }
+    50% { background-color: #1900ff; box-shadow: 0 0 50px #e90618; }
     100% { background-color: #FFEB3B; box-shadow: 0 0 3px #FFEB3B; }
-  }
+  } */
   
   @keyframes glowing {
     0% { background-color: #FFEB3B; box-shadow: 0 0 3px #FFEB3B; }
-    50% { background-color: #FF0000; box-shadow: 0 0 50px #FF0000; }
+    50% { background-color: #1900ff; box-shadow: 0 0 50px #1900ff; }
     100% { background-color: #FFEB3B; box-shadow: 0 0 3px #FFEB3B; }
   }
 .bg-col-pink
@@ -452,7 +453,8 @@ h1{
 {
     font-size: 30px;
     font-weight: bold;
-    text-shadow: 0px 2px #f06d3f;
+    text-shadow: 0px 2px black;
+    color: red;
 }
 .bg-col-green
 {
@@ -500,3 +502,33 @@ b, strong {
 .fs-18{
  font-size: 18px;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    width:100%;
+    z-index:9999;
+  }
+
+  .subnavbar li
+  {
+    border-radius: 10px;
+  }
+  .subnavbar li a
+  {
+    color:white !important;
+    font-size: 18px;
+    font-weight:600;
+  }
+
+  .mr-10px
+  {
+    margin-right:10px;
+  }
+
+  .container-header-bottom {
+    width: 815px !important;
+}
+  
