@@ -290,8 +290,213 @@ h4, .h4 {
     font-size:18px;
     color:red;
 }
-.navbar-nav li:hover
+/* .navbar-nav li:hover
 {
     border-radius: 100%;
     background-color: red;
+} */
+
+.navbar-nav li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: red;
+    width: 0;
+    transition: width .3s;
+}
+
+.navbar-nav li a:hover::after {
+
+    width: 100%;
+    display: block;
+}
+
+.h-140px
+{
+    height:140px !important
+}
+.br-shadow
+{
+    border: 1px solid #CACACA;
+    box-shadow: 0 0 4px rgb(0 0 0 / 10%);
+}
+.bg-col-white
+{
+    background-color: white;
+}
+
+.rounded
+{
+    border-radius: 10px;
+}
+.position-absolute
+{
+    position:absolute !important;
+
+}
+
+.hide
+{
+    display: none;
+}
+
+.home:hover + .hide {
+    display: block !important;
+}
+
+.about:hover + .hide
+{
+    display: block !important;
+}
+
+.dvabout:hover{
+    display:block !important;
+    cursor: pointer !important;
+}
+.w-150px
+{
+    width:150px;
+    width:250px;
+}
+
+.label-hover div:hover{
+    background-color: #F5F5F5  ;
+}
+.label-hover label{
+    cursor: pointer !important;
+    font-weight:400;
+}
+.w90
+{
+    width:90%;
+    margin:auto !important;
+}
+
+.dvhome:hover{
+    display:block !important;
+    cursor: pointer !important;
+}
+
+.active::after
+{
+    content: '';
+    display: block;
+    height: 2px;
+    background: red;
+    width: 100% !important;
+    transition: width .3s;
+}
+.animation {
+    -webkit-animation: glow 1500ms infinite;
+    -moz-animation: glow 1500ms infinite;
+    -o-animation: glow 1500ms infinite;
+    animation: glow 1500ms infinite;
+}
+
+  .animation  {
+ 
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+  }
+  @-webkit-keyframes glowing {
+    0% { background-color: #FFEB3B; -webkit-box-shadow: 0 0 3px #FFEB3B; }
+    50% { background-color: #FF0000; -webkit-box-shadow: 0 0 50px #FF0000; }
+    100% { background-color: #FFEB3B; -webkit-box-shadow: 0 0 3px #FFEB3B; }
+  }
+  
+  @-moz-keyframes glowing {
+    0% { background-color: #FFEB3B; -moz-box-shadow: 0 0 3px #FFEB3B; }
+    50% { background-color: #FF0000; -moz-box-shadow: 0 0 50px #FF0000; }
+    100% { background-color: #FFEB3B; -moz-box-shadow: 0 0 3px #FFEB3B; }
+  }
+  
+  @-o-keyframes glowing {
+    0% { background-color: #FFEB3B; box-shadow: 0 0 3px #FFEB3B; }
+    50% { background-color: #ef190a; box-shadow: 0 0 50px #e90618; }
+    100% { background-color: #FFEB3B; box-shadow: 0 0 3px #FFEB3B; }
+  }
+  
+  @keyframes glowing {
+    0% { background-color: #FFEB3B; box-shadow: 0 0 3px #FFEB3B; }
+    50% { background-color: #FF0000; box-shadow: 0 0 50px #FF0000; }
+    100% { background-color: #FFEB3B; box-shadow: 0 0 3px #FFEB3B; }
+  }
+.bg-col-pink
+{
+    background-color :#f00;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.col-white
+{
+    color:white !important;
+}
+.fs-20
+{
+    font-size:20px !important;
+}
+.fw-bold
+{
+    font-weight:bold !important;
+}
+.bck-img-about{
+    background-image: url("./aboutbackground.jpg");
+}
+.h2schoolname
+{
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0px 2px #f06d3f;
+}
+.bg-col-green
+{
+    background-color: #8CC542;
+}
+.m-footer-school h2 {
+    margin-top: 67px;
+    font-family: 'Alegreya',serif;
+    width: 100%;
+    margin-bottom: 22px;
+    font-weight: bold;
+    font-size: 30px;
+    float: none;
+    color: #fff;
+}
+b, strong {
+    font-weight: 700;
+}
+.footer-top
+{
+    color:white !important;
+}
+.m-footer-social a
+{
+    color: white !important;
+    text-transform: none;
+    text-decoration: none !important;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.soc-link {
+    width: 49px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    background: #fff;
+    color: #8cc542;
+    border-radius: 50px;
+    font-size: 20px;
+    float: left;
+    margin-left: 5px;
+}
+.fs-18{
+ font-size: 18px;
 }
