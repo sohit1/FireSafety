@@ -45,8 +45,8 @@
 </head>
 
 <body>
-    <div class="header-nav fixed-top">
-        <nav class="navbar navbar-expand-sm bg-color-yellow navbar-light">
+    <div class="header-nav fixed-top" style="height:60px">
+        <nav class="navbar navbar-expand-sm bg-color-yellow navbar-light" style="height:100%">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">Sure</a>
@@ -87,7 +87,7 @@
                 </ul>
                 <div class="float-right mdisplay">
                     <i class="fa fa-bars" style="margin-right: 10px;" onclick="openNav()"></i>
-                    <div id="myNav" class="dvhome br-shadow bg-col-white m-top-1 rounded position-absolute pd-top-10px m-right-10px w0 top42 right0 transition5 line-height2">
+                    <div id="myNav" style="width:260px;" class="dvhome br-shadow bg-col-white m-top-1 rounded position-absolute pd-top-10px m-right-10px w0 top60 right0 line-height2">
                         <div class="label-hover w90">
                             <div class='align-items-center closeicon'  id="close">
                                 <i class="fa fa-close" onclick="closeNav()"></i>
@@ -507,7 +507,7 @@
             }
         });
         function openNav() {
-            document.getElementById("myNav").style.width = "180px";
+            document.getElementById("myNav").style.width = "260px";
         }
 
         function closeNav() {
